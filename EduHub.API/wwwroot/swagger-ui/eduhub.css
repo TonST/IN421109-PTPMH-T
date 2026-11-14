@@ -1,0 +1,186 @@
+:root {
+  color-scheme: dark;
+  --edu-ink: #e8f1f3;
+  --edu-muted: #9cb4ba;
+  --edu-panel: #12252b;
+  --edu-panel-raised: #19343b;
+  --edu-line: #2b4c53;
+  --edu-mint: #48d6b0;
+  --edu-blue: #62b8e8;
+}
+
+html, body {
+  background: #0b171b !important;
+  color: var(--edu-ink);
+}
+
+.swagger-ui {
+  color: var(--edu-ink);
+  font-family: "Segoe UI", Inter, Arial, sans-serif;
+}
+
+.swagger-ui .topbar {
+  background: linear-gradient(105deg, #10262d, #153b3e 68%, #12413b);
+  border-bottom: 1px solid #2d6963;
+  box-shadow: 0 5px 22px #06101399;
+}
+
+.swagger-ui .topbar .wrapper {
+  max-width: 1260px;
+  padding: 12px 24px;
+}
+
+.swagger-ui .topbar-wrapper .link {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.swagger-ui .topbar-wrapper .link img {
+  display: none;
+}
+
+.swagger-ui .topbar-wrapper .link::before {
+  align-items: center;
+  background: var(--edu-mint);
+  border-radius: 12px;
+  color: #08221f;
+  content: "EH";
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 800;
+  height: 38px;
+  justify-content: center;
+  letter-spacing: .4px;
+  width: 42px;
+}
+
+.swagger-ui .topbar-wrapper .link::after {
+  color: #eafff8;
+  content: "EduHub  /  API Explorer";
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: .2px;
+}
+
+.swagger-ui .info {
+  margin: 34px 0 28px;
+}
+
+.swagger-ui .info .title,
+.swagger-ui .opblock-tag,
+.swagger-ui .model-title {
+  color: var(--edu-ink) !important;
+}
+
+.swagger-ui .info .title {
+  font-size: 30px;
+  letter-spacing: -.5px;
+}
+
+.swagger-ui .info .title small {
+  background: #17423e;
+  border-color: #2b7166;
+  border-radius: 999px;
+  color: #8ef0d0;
+}
+
+.swagger-ui .scheme-container,
+.swagger-ui section.models {
+  background: var(--edu-panel) !important;
+  border: 1px solid var(--edu-line);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px #0002;
+}
+
+.swagger-ui .opblock-tag-section {
+  margin: 16px 0;
+}
+
+.swagger-ui .opblock-tag {
+  border-bottom-color: var(--edu-line);
+  font-size: 19px;
+}
+
+.swagger-ui .opblock {
+  background: var(--edu-panel) !important;
+  border-color: var(--edu-line) !important;
+  border-radius: 9px;
+  box-shadow: 0 6px 18px #0002;
+  overflow: hidden;
+}
+
+.swagger-ui .opblock .opblock-summary {
+  border-bottom-color: var(--edu-line);
+}
+
+.swagger-ui .opblock .opblock-section-header,
+.swagger-ui .opblock-body,
+.swagger-ui .model-box {
+  background: var(--edu-panel-raised) !important;
+}
+
+.swagger-ui .opblock .opblock-summary-path,
+.swagger-ui .opblock .opblock-summary-description,
+.swagger-ui label,
+.swagger-ui .parameter__name,
+.swagger-ui .parameter__type,
+.swagger-ui .response-col_status,
+.swagger-ui table thead tr th,
+.swagger-ui table thead tr td,
+.swagger-ui .model {
+  color: var(--edu-ink) !important;
+}
+
+.swagger-ui .opblock.opblock-get { border-left: 4px solid var(--edu-blue) !important; }
+.swagger-ui .opblock.opblock-post { border-left: 4px solid var(--edu-mint) !important; }
+.swagger-ui .opblock.opblock-delete { border-left: 4px solid #ff777d !important; }
+.swagger-ui .opblock.opblock-put,
+.swagger-ui .opblock.opblock-patch { border-left: 4px solid #c8a8ff !important; }
+
+.swagger-ui input,
+.swagger-ui select,
+.swagger-ui textarea {
+  background: #0c1b20 !important;
+  border: 1px solid #42636a !important;
+  border-radius: 6px !important;
+  color: var(--edu-ink) !important;
+}
+
+.swagger-ui .btn {
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.swagger-ui .btn.execute {
+  background: #27bd98;
+  border-color: #27bd98;
+  color: #06231d;
+  font-weight: 700;
+}
+
+.swagger-ui .btn.execute:hover {
+  background: #48d6b0;
+}
+
+.swagger-ui .btn.authorize {
+  border-color: var(--edu-mint);
+  color: var(--edu-mint);
+}
+
+.swagger-ui .response-col_description__inner div.markdown p,
+.swagger-ui .markdown p,
+.swagger-ui .renderedMarkdown p,
+.swagger-ui .prop-type,
+.swagger-ui .prop-format {
+  color: var(--edu-muted);
+}
+
+.swagger-ui .servers-title,
+.swagger-ui .servers > label {
+  color: var(--edu-ink);
+}
+
+.swagger-ui .download-contents {
+  color: var(--edu-mint);
+}

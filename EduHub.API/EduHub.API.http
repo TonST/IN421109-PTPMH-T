@@ -1,6 +1,35 @@
 @EduHub.API_HostAddress = http://localhost:5161
+@ClubId = 11111111-1111-1111-1111-111111111111
 
-GET {{EduHub.API_HostAddress}}/weatherforecast/
+### Tạo sự kiện hợp lệ (201 Created)
+POST {{EduHub.API_HostAddress}}/api/clubs/{{ClubId}}/events
+Content-Type: application/json
+
+{
+  "title": "IN4211 Demo Event",
+  "date": "2026-12-01T09:00:00Z",
+  "capacity": 40,
+  "channel": "email"
+}
+
+### Gọi lỗi: tiêu đề rỗng (400 Bad Request)
+POST {{EduHub.API_HostAddress}}/api/clubs/{{ClubId}}/events
+Content-Type: application/json
+
+{
+  "title": "",
+  "date": "2026-12-01T09:00:00Z",
+  "capacity": 40,
+  "channel": "email"
+}
+
+### Lấy danh sách sự kiện của câu lạc bộ
+GET {{EduHub.API_HostAddress}}/api/clubs/{{ClubId}}/events
 Accept: application/json
 
-###
+### Xem sự kiện theo ID (thay bằng ID trả về ở request tạo)
+GET {{EduHub.API_HostAddress}}/api/events/00000000-0000-0000-0000-000000000001
+Accept: application/json
+
+### Xoá sự kiện theo ID (thay bằng ID trả về ở request tạo)
+DELETE {{EduHub.API_HostAddress}}/api/events/00000000-0000-0000-0000-000000000001
